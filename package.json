@@ -1,11 +1,8 @@
 {
-  "name": "ob-datatable",
-  "version": "1.1.0",
+  "name": "ob-datatables",
+  "version": "1.2.0",
   "description": "Datatables for React using Material-UI",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --progress --colors",
     "test": "mocha --require babel-register test/**/*.test.js",
