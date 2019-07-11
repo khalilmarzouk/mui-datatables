@@ -18,6 +18,11 @@ module.exports = {
     host: "0.0.0.0",
     port: 5050
   },
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'index.js',
+    libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+  },
   module: {
     rules: [
       {
