@@ -1,8 +1,11 @@
 {
   "name": "ob-datatables",
-  "version": "1.7.0",
+  "version": "1.25.0",
   "description": "Datatables for React using Material-UI",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --progress --colors",
     "test": "mocha --require babel-register test/**/*.test.js",
@@ -16,7 +19,7 @@
     "prettier": "find src/ docs/ test/ -type f -name \"*.js\" ! -path \"*/.next/*\" | xargs prettier --write",
     "lint": "eslint src",
     "build": "cross-env NODE_ENV=production npm run prettier && rollup -c",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
   },
   "repository": {
     "type": "git",
