@@ -3,9 +3,6 @@
   "version": "1.7.0",
   "description": "Datatables for React using Material-UI",
   "main": "index.js",
-  "files": [
-    "/"
-  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --progress --colors",
     "test": "mocha --require babel-register test/**/*.test.js",
