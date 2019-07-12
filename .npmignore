@@ -2,3 +2,7 @@ src
 test
 examples
 docs
+.github
+node_modules
+.babelrc
+.covalls.yml

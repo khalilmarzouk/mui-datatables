@@ -5,11 +5,10 @@ module.exports = {
   entry: {
     app: "./examples/customize-filter/index.js"
   },
+  stats: "verbose",
+  context: __dirname,
   output: {
-    path:path.resolve(__dirname, 'build'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
-
+    filename: 'bundle.js'
   },
   devtool: 'source-map',
   devServer: {
@@ -19,7 +18,6 @@ module.exports = {
     host: "0.0.0.0",
     port: 5050
   },
-
   module: {
     rules: [
       {
@@ -31,9 +29,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  externals: {
-    'react': 'commonjs react' // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
