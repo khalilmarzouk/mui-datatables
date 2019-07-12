@@ -1,6 +1,6 @@
 {
   "name": "ob-datatables",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Datatables for React using Material-UI",
   "main": "index.js",
   "files": [
